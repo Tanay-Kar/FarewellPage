@@ -823,6 +823,9 @@ input[type="button"]:focus {
     outline: 0;
 }
 
+.img-btn:hover {
+    color: white;
+}
 
 /* button primary
  * ------------------------------------------------- */

@@ -8,7 +8,7 @@
     "use strict";
     
     var cfg = {
-        scrollDuration : 800, // smoothscroll duration
+        scrollDuration : 400, // smoothscroll duration
         mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
     },
 
@@ -151,6 +151,13 @@
 
     };
     
+    function mimicOriginalLinkClick() {
+        var originalLink = document.getElementById("original");
+        originalLink.click();
+    }
+    
+    var mimickedLink = document.getElementById("mimicked");
+    mimickedLink.addEventListener("click", mimicOriginalLinkClick);
 
    /* Stat Counter
     * ------------------------------------------------------ */
